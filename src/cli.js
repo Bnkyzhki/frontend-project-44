@@ -6,5 +6,5 @@ const greetings = () => {
   Console.log(`Hello, ${name}!`);
 };
 
-export {greetings, name}
-
+export { greetings};
+ 
