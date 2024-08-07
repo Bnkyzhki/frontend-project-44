@@ -5,3 +5,6 @@
 
 Brain-even game
 https://asciinema.org/a/WacCrzG3d5DOi53Tog2PGkaVg
+
+Brain-calc game
+https://asciinema.org/a/lmPq9xlitKXlkYsnV8cz82yc5
