@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import {gameRules, getRandomInt} from '../index.js';
 
 const calc = () => {
@@ -9,13 +7,13 @@ const calc = () => {
     const number1 = getRandomInt(100);
     const number2 = getRandomInt(100);
 
-    const signs = ['+', '-', '*'];
-    const sign = signs[getRandomInt(2)];
+    const symbols = ['+', '-', '*'];
+    const symbol = symbols[getRandomInt(2)];
 
     const question = `${number1} ${sign} ${number2}`;
 
     let result = 0;
-    switch (sign) {
+    switch (symbol) {
       case '+':
         result = number1 + number2;
         break;
