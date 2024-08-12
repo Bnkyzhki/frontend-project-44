@@ -10,7 +10,7 @@ const calc = () => {
     const symbols = ['+', '-', '*'];
     const symbol = symbols[getRandomInt(2)];
 
-    const question = `${number1} ${sign} ${number2}`;
+    const question = `${number1} ${symbol} ${number2}`;
 
     let result = 0;
     switch (symbol) {
