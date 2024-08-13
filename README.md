@@ -14,3 +14,6 @@ https://asciinema.org/a/jyzlPGG8NnQ3ZUitYh6K6RPSB
 
 Brain-progression game
 https://asciinema.org/a/HvzMHO4X45IdfdCnmtMx1Zqsx
+
+Brain-prime game
+https://asciinema.org/a/o1KkjWW9DVeDlXswaWxp0EKvR
