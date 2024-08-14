@@ -8,7 +8,7 @@ const progression = () => {
     const startArr = getRandomInt(10);
     const stepArr = getRandomInt(10);
     const lengthArr = 9;
-    for (let i = 0; i < lengthArr; i++) {
+    for (let i = 0; i < lengthArr; i += 1) {
       arr.push(startArr + i * stepArr);
     }
     return arr;
