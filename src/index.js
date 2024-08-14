@@ -28,4 +28,4 @@ const gameRules = (rule, task) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export {getRandomInt, gameRules};
+export { getRandomInt, gameRules };

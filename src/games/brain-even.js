@@ -1,5 +1,4 @@
-import {gameRules, getRandomInt} from '../index.js';
-
+import { gameRules, getRandomInt } from '../index.js';
 
 const evenGame = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';

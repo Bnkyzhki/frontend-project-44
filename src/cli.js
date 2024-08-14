@@ -7,4 +7,3 @@ const greetings = () => {
 };
 
 export default greetings;
- 

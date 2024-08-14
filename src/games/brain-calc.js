@@ -1,4 +1,4 @@
-import {gameRules, getRandomInt} from '../index.js';
+import { gameRules, getRandomInt } from '../index.js';
 
 const calc = () => {
   const rule = 'What is the result of the expression?';
