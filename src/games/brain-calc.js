@@ -1,38 +1,41 @@
 import { gameRules, getRandomInt } from '../index.js';
 
-const calc = () => {
-  const rule = 'What is the result of the expression?';
+const rule = 'What is the result of the expression?';
 
-  const task = () => {
-    const number1 = getRandomInt(100);
-    const number2 = getRandomInt(100);
+const symbols = ['+', '-', '*'];
 
-    const symbols = ['+', '-', '*'];
-    const symbol = symbols[getRandomInt(2)];
+const calculating = (number1, number2, symbol) => {
+  let calc = 0;
+  switch (symbol) {
+    case '+':
+      calc = number1 + number2;
+      break;
+    case '-':
+      calc = number1 - number2;
+      break;
+    case '*':
+      calc = number1 * number2;
+      break;
+    default:
+      calc = null;
+  }
+  return calc;
+};
 
-    const question = `${number1} ${symbol} ${number2}`;
+const task = () => {
+  const symbol = symbols[getRandomInt(2)];
+  const number1 = getRandomInt(100);
+  const number2 = getRandomInt(100);
 
-    let result = 0;
-    switch (symbol) {
-      case '+':
-        result = number1 + number2;
-        break;
-      case '-':
-        result = number1 - number2;
-        break;
-      case '*':
-        result = number1 * number2;
-        break;
-      default:
-        result = null;
-    }
+  const question = `${number1} ${symbol} ${number2}`;
+  const resultRaw = calculating(number1, number2, symbol);
+  const result = resultRaw.toString();
 
-    result = result.toString();
+  return [question, result];
+};
 
-    return [question, result];
-  };
-
+const startCalc = () => {
   gameRules(rule, task);
 };
 
-export default calc;
+export default startCalc;
