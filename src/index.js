@@ -25,7 +25,7 @@ const gameRules = (rule, task) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-}
+  }
   console.log(`Congratulations, ${userName}!`);
 };
 export { getRandomInt, gameRules };
