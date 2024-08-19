@@ -5,21 +5,16 @@ const rule = 'What is the result of the expression?';
 const symbols = ['+', '-', '*'];
 
 const calculating = (number1, number2, symbol) => {
-  let calc = 0;
   switch (symbol) {
     case '+':
-      calc = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      calc = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      calc = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      calc = null;
+      return null;
   }
-  return calc;
 };
 
 const task = () => {
